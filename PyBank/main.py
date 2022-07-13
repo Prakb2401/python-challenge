@@ -8,8 +8,8 @@ pybank = []
 with open (budget_csv) as csvfile: 
     csvreader = csv.reader(csvfile, delimiter=",")
     next(csvreader)
-    for data in csvreader:
-        pybank.append(data)
+    for bank in csvreader:
+        pybank.append(bank)
 
 # print(pybank)
 
@@ -21,7 +21,7 @@ for i in pybank:
 months_counter = len(months)
 # print(months_counter)
 
-#Finding total protis in csv file
+#Finding total profits in csv file
 profits = []
 for i in pybank:
     profits.append(int(i[1]))
@@ -29,7 +29,7 @@ for i in pybank:
 total_profits = sum(profits)
 # print(total_profits)
 
-#FInding The changes in "Profit/Losses" over the entire period, and then the average of those changes
+#Finding The changes in "Profit/Losses" over the entire period, and then the average of those changes
 summay_table_row = 0
 profit_change = 0
 profit_losses = []
