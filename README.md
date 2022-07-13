@@ -123,5 +123,5 @@ Raymon_percent = [f"{round(Raymon_Anthony_Doane/int(total_votes),4)*100}%", f"{R
 print(Raymon_percent)
 ```
 7. Wrote code to find the winner of the election by popular vote
-8. wrote code to output my analysis
+8. Wrote code to output my analysis
 
